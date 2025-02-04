@@ -128,10 +128,16 @@ namespace FreOS
             sleepingForm.Show();
             this.Hide();
         }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
+        
+        private void guna2Button3_Click(object sender, MouseEventArgs e)
         {
-            guna2ContextMenuStrip1.Show();
+            guna2ContextMenuStrip1.Show(this, e.Location);
+        }
+        private void Shutdown_Click(object sender, EventArgs e)
+        {
+            ShutdownForm shutdownForm = new ShutdownForm();
+            shutdownForm.Show();
+            this.Hide();
         }
     }
 }

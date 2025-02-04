@@ -173,7 +173,7 @@
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button3.Size = new Size(40, 40);
             guna2Button3.TabIndex = 4;
-            guna2Button3.Click += guna2Button3_Click;
+            guna2Button3.MouseClick += guna2Button3_Click;
             // 
             // guna2ContextMenuStrip1
             // 
@@ -202,6 +202,7 @@
             Shutdown.Name = "Shutdown";
             Shutdown.Size = new Size(128, 22);
             Shutdown.Text = "Shutdown";
+            Shutdown.Click += Shutdown_Click;
             // 
             // Form1
             // 
